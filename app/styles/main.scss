@@ -1,0 +1,49 @@
+@import 'fonts';
+@import 'loader';
+@import 'header';
+@import 'items';
+@import 'bottom';
+@import 'button-bubble';
+@import 'partners';
+@import 'footer';
+@import 'mobile';
+@import 'modal';
+@import 'button-under';
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+}
+.w-100 {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  @include tablet() {
+    max-width: calc(100% - 40px);
+    padding: 0 20px;
+  }
+}
+#clock {
+  overflow: hidden;
+}
+.bubbly-button {
+  @include mobile() {
+    max-width: 100%;
+    font-size: 1em;
+  }
+}
+#timer5cce7dab17cd97c852305c47143b675e {
+  span:nth-child(7) {
+    @include tablet() {
+      display: none !important;
+    }
+  }
+  span:nth-child(5) {
+    @include mobile() {
+      display: none !important;
+    }
+  }
+}
